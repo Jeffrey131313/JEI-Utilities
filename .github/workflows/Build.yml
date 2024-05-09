@@ -28,8 +28,8 @@ jobs:
     - name: Output file tree to txt
       run: |
         cd /
-        mkdir -p output
-        find . -type f > output/file-tree.txt
+        sudo mkdir -p output
+        sudo find . -type f > output/file-tree.txt
         
     - name: Archive file
       uses: actions/upload-artifact@v4
