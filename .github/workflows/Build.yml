@@ -28,11 +28,10 @@ jobs:
     - name: Output file tree to txt
       run: |
         cd "$GITHUB_WORKSPACE"
-        mkdir -p output
-        find . -type f > output/file-tree.txt
+        find . -type f > build/libs/file-tree.txt
         
     - name: Archive file
       uses: actions/upload-artifact@v4
       with:
-        name: end.txt
-        path: output
+        name: output
+        path: build/libs/
