@@ -28,6 +28,7 @@ jobs:
     - name: Output file tree to txt
       run: |
         cd /
+        mkdir -p output
         find . -type f > output/file-tree.txt
         
     - name: Archive file
