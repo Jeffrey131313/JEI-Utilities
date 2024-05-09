@@ -25,8 +25,13 @@ jobs:
     - name: Build
       run: ./gradlew build
       
+    - name: Output file tree to txt
+      run: |
+        cd /
+        find . -type f > output/file-tree.txt
+        
     - name: Archive file
       uses: actions/upload-artifact@v4
       with:
-        name: env.jar
-        path: env.jar
+        name: end.txt
+        path: output
