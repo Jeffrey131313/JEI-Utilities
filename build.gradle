@@ -19,7 +19,7 @@ apply plugin: 'net.minecraftforge.gradle'
 apply plugin: 'org.parchmentmc.librarian.forgegradle'
 apply plugin: 'org.spongepowered.mixin'
 
-version = mod_version
+version = 1.18.2-40.0.19
 group = mod_group
 archivesBaseName = "JEI-Utilities" + '-' + minecraft_version
 
