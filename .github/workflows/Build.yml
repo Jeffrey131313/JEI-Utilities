@@ -23,7 +23,7 @@ jobs:
       uses: gradle/gradle-build-action@v3
       
     - name: Build
-      run: ./gradlew build
+      run: ./gradlew clean build
       
     - name: Output file tree to txt
       run: |
