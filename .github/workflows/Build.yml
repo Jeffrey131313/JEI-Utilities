@@ -25,8 +25,8 @@ jobs:
     - name: Build
       run: ./gradlew build
       
-    - name: Archive Leaves
-      uses: actions/upload-artifact@v3
+    - name: Archive file
+      uses: actions/upload-artifact@v4
       with:
-        name: ${{ env.jar }}
-        path: ${{ env.jar }}
+        name: env.jar
+        path: env.jar
